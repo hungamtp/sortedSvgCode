@@ -29,13 +29,10 @@ const clickIncrease = () => {
 const text = document.getElementsByClassName("1");
 const start = () =>{
   for (let i = 0; i < text.length; i++) {
-    if
-    (text[i].innerHTML.charCodeAt(0) % 2  ==0) {
+
       text[i].innerHTML = String.fromCharCode(text[i].innerHTML.charCodeAt(0) + 1);
-    }else{
-      text[i].innerHTML = String.fromCharCode(text[i].innerHTML.charCodeAt(0) + 2);
-    }
-    
+
+ 
   }
 }
 
