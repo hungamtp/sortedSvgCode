@@ -29,10 +29,17 @@ const clickIncrease = () => {
 const text = document.getElementsByClassName("1");
 const start = () =>{
   for (let i = 0; i < text.length; i++) {
-
       text[i].innerHTML = String.fromCharCode(text[i].innerHTML.charCodeAt(0) + 1);
-
- 
+      color = "#" +(Number(color1.split("#")[1]) + 10);
+      text[i].style.fill = color;
+      text[i].style.background = color;
+  }
+}
+const changeColor = () =>{
+  for (let i = 0; i < text.length; i++) {
+    color = "#" +(Number(color1.split("#")[1]) + 10);
+    text[i].style.fill = color;
+    text[i].style.background = color;
   }
 }
 
@@ -49,7 +56,7 @@ const sort = () =>{
   }
 }
 setInterval(clickIncrease,100);
-setInterval(start,100);
+setInterval(start,50);
 setInterval(sort,1000);
 
 
