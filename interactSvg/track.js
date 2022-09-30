@@ -1,35 +1,35 @@
-const textLove2 = document.getElementById("text2");
-textLove2.innerHTML =  String.fromCharCode(9617)
-function moveRandomNess1 ( ){
+const textLove6 = document.getElementById("text6");
+textLove6.innerHTML =  '➞'
+function moveRandomNess6 ( ){
   let a =Math.random() < 0.5;
   let b =Math.random() > 0.5;
   if(a){
     if(b){
-      let valueXIncrease = textLove2.x["animVal"][0].value +5
-      textLove2.style.x = valueXIncrease;
-      textLove2.setAttribute("x" , valueXIncrease);
-      textLove2.innerHTML = String.fromCharCode(9617)
+      let valueXIncrease = textLove6.x["animVal"][0].value +5
+      textLove6.style.x = valueXIncrease;
+      textLove6.setAttribute("x" , valueXIncrease);
+      textLove6.innerHTML = '➞'
     }else{
-      let valueXIncrease = textLove2.x["animVal"][0].value -5;
-      textLove2.style.x = valueXIncrease;
-      textLove2.setAttribute("x" , valueXIncrease);
-      textLove2.innerHTML = String.fromCharCode(9618)
+      let valueXIncrease = textLove6.x["animVal"][0].value -5;
+      textLove6.style.x = valueXIncrease;
+      textLove6.setAttribute("x" , valueXIncrease);
+      textLove6.innerHTML = '⬅'
     }
   }else{
     if(b){
-      let valueXIncrease = textLove2.y["animVal"][0].value +5
-      textLove2.style.y = valueXIncrease;
-      textLove2.setAttribute("y" , valueXIncrease);
-      textLove2.innerHTML = String.fromCharCode(9619)
+      let valueXIncrease = textLove6.y["animVal"][0].value +5
+      textLove6.style.y = valueXIncrease;
+      textLove6.setAttribute("y" , valueXIncrease);
+      textLove6.innerHTML = '⬆'
     }else{
-      let valueXIncrease = textLove2.y["animVal"][0].value -5
-      textLove2.style.y = valueXIncrease;
-      textLove2.setAttribute("y" , valueXIncrease);
-      textLove2.innerHTML = String.fromCharCode(9620)
+      let valueXIncrease = textLove6.y["animVal"][0].value -5
+      textLove6.style.y = valueXIncrease;
+      textLove6.setAttribute("y" , valueXIncrease);
+      textLove6.innerHTML = '⬇'
     }
   }
 }
 
-setInterval(moveRandomNess1 , 100)
+setInterval(moveRandomNess6 , 100)
 
 
